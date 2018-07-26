@@ -1,3 +1,3 @@
-# Paladique's Sandbox Repo
+# The Sandbox Repo
 
 Lots of spaghetti code.
