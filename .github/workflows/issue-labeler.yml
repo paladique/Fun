@@ -6,98 +6,98 @@ on:
 
 jobs:
   jan:
-    runs-on: &Runs ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - uses: &Uses Naturalclar/issue-action@v1.0.0
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["January", "Jan"]'
           labels: '["January"]'
-          github-token: &Token "${{ secrets.label_secret }}"
+          github-token: "${{ secrets.label_secret }}"
   feb:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["February", "Feb"]'
           labels: '["February"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   mar:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["March", "Mar"]'
           labels: '["March"]'
-          github-token: *Token  
+          github-token: "${{ secrets.label_secret }}"  
   april:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["April"]'
           labels: '["April"]'
-          github-token: *Token  
+          github-token: "${{ secrets.label_secret }}"  
   may:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["May"]'
           labels: '["May"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   june:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["June", "Jun"]'
           labels: '["June"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   july:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["July", "Jul"]'
           labels: '["February"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   aug:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["August", "Aug"]'
           labels: '["August"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   sept:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["September", "Sept"]'
           labels: '["September"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   oct:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["October", "Oct"]'
           labels: '["October"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   nov:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["November", "Nov"]'
           labels: '["November"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
   dec:
-    runs-on: *Runs
+    runs-on: ubuntu-latest
     steps:
-      - uses: *Uses
+      - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["December", "Dec"]'
           labels: '["December"]'
-          github-token: *Token
+          github-token: "${{ secrets.label_secret }}"
