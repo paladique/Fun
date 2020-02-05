@@ -12,7 +12,7 @@ jobs:
         with:
           keywords: '["January", "Jan"]'
           labels: '["January"]'
-          github-token: "${{ secrets.label_secret }}"
+          github-token: ${{ secrets.label_secret }}
   feb:
     runs-on: ubuntu-latest
     steps:
@@ -59,7 +59,7 @@ jobs:
       - uses: Naturalclar/issue-action@v1.0.0
         with:
           keywords: '["July", "Jul"]'
-          labels: '["February"]'
+          labels: '["July"]'
           github-token: "${{ secrets.label_secret }}"
   aug:
     runs-on: ubuntu-latest
