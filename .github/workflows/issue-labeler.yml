@@ -1,0 +1,103 @@
+name: "Set Issue Label"
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  jan:
+    runs-on: &Runs ubuntu-latest
+    steps:
+      - uses: &Uses Naturalclar/issue-action@v1.0.0
+        with:
+          keywords: '["January", "Jan"]'
+          labels: '["January"]'
+          github-token: &Token "${{ secrets.label_secret }}"
+  feb:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["February", "Feb"]'
+          labels: '["February"]'
+          github-token: *Token
+  mar:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["March", "Mar"]'
+          labels: '["March"]'
+          github-token: *Token  
+  april:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["April"]'
+          labels: '["April"]'
+          github-token: *Token  
+  may:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["May"]'
+          labels: '["May"]'
+          github-token: *Token
+  june:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["June", "Jun"]'
+          labels: '["June"]'
+          github-token: *Token
+  july:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["July", "Jul"]'
+          labels: '["February"]'
+          github-token: *Token
+  aug:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["August", "Aug"]'
+          labels: '["August"]'
+          github-token: *Token
+  sept:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["September", "Sept"]'
+          labels: '["September"]'
+          github-token: *Token
+  oct:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["October", "Oct"]'
+          labels: '["October"]'
+          github-token: *Token
+  nov:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["November", "Nov"]'
+          labels: '["November"]'
+          github-token: *Token
+  dec:
+    runs-on: *Runs
+    steps:
+      - uses: *Uses
+        with:
+          keywords: '["December", "Dec"]'
+          labels: '["December"]'
+          github-token: *Token
